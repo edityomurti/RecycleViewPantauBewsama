@@ -51,7 +51,7 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.KandidatViewHolder
 
         KandidatViewHolder(View itemView) {
             super(itemView);
-            cv = (CardView)itemView.findViewById(R.id.cv);
+            cv = (CardView)itemView.findViewById(R.id.card_contest);
             nama_Jabatan = (TextView) itemView.findViewById(R.id.textNamaJabatan);
             daerah_Jabatan = (TextView) itemView.findViewById(R.id.textDaerahJabatan);
             daerah_Uplevel = (TextView) itemView.findViewById(R.id.textDaerahUplevel);
