@@ -34,10 +34,10 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.PersonViewHolder> 
         }
     }
 
-    List<Person> persons;
+    List<Kandidat> kandidats;
 
-    RVAdapter(List<Person> persons){
-        this.persons = persons;
+    RVAdapter(List<Kandidat> kandidats){
+        this.kandidats = kandidats;
     }
 
     @Override
@@ -54,14 +54,14 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.PersonViewHolder> 
 
     @Override
     public void onBindViewHolder(PersonViewHolder personViewHolder, int i) {
-        personViewHolder.personName.setText(persons.get(i).name);
-        personViewHolder.personAge.setText(persons.get(i).age);
-        personViewHolder.personPhoto1.setImageResource(persons.get(i).photoId1);
-        personViewHolder.personPhoto2.setImageResource(persons.get(i).photoId2);
+        personViewHolder.personName.setText(kandidats.get(i).name);
+        personViewHolder.personAge.setText(kandidats.get(i).age);
+        personViewHolder.personPhoto1.setImageResource(kandidats.get(i).photoId1);
+        personViewHolder.personPhoto2.setImageResource(kandidats.get(i).photoId2);
     }
 
     @Override
     public int getItemCount() {
-        return persons.size();
+        return kandidats.size();
     }
 }
