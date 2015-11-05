@@ -345,6 +345,50 @@
                     android:background="#da3340"
                     android:layout_marginTop="7dp"/>
             </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutBawahFoto"
+                android:weightSum="1">
+                <Button
+                    android:id="@+id/btn_tanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:paddingRight="8dp"
+                    android:text="9 Desember 2015"
+                    android:textSize="8dp"
+                    android:drawableLeft="@drawable/ic_action_calendar_day"
+                    android:drawablePadding="-3dp"
+                    android:background="#00000000" />
+                <Button
+                    android:id="@+id/btn_lokasi"
+                    android:layout_width="60dp"
+                    android:layout_height="26dp"
+                    android:text="Lokasi"
+                    android:textSize="8dp"
+                    android:drawableLeft="@drawable/ic_action_location"
+                    android:drawablePadding="-15.4dp"
+                    android:background="#00000000"/>
+                <Button
+                    android:id="@+id/btn_tps"
+                    android:layout_width="50dp"
+                    android:layout_height="26dp"
+                    android:text="tps"
+                    android:textSize="8dp"
+                    android:drawableLeft="@drawable/ic_action_inbox"
+                    android:drawablePadding="-10dp"
+                    android:background="#00000000"/>
+                <Button
+                    android:id="@+id/btn_komentar"
+                    android:layout_width="80dp"
+                    android:layout_height="26dp"
+                    android:text="komentar"
+                    android:textSize="8dp"
+                    android:drawableLeft="@drawable/ic_action_monolog"
+                    android:drawablePadding="-10dp"
+                    android:background="#00000000"/>
+            </LinearLayout>
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
