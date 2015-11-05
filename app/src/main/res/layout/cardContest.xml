@@ -34,13 +34,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                         <ImageView
-                            android:id="@+id/fotoCalon1"
+                            android:id="@+id/imageFotoCalon1"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:src="@drawable/emma"
                             android:scaleType="centerCrop"/>
                         <ImageView
-                            android:id="@+id/fotoWakil1"
+                            android:id="@+id/imageFotoWakil1"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_marginLeft="1dp"
@@ -74,13 +74,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                         <ImageView
-                            android:id="@+id/fotoCalon2"
+                            android:id="@+id/imageFotoCalon2"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:src="@drawable/emma"
                             android:scaleType="centerCrop"/>
                         <ImageView
-                            android:id="@+id/fotoWakil2"
+                            android:id="@+id/imageFotoWakil2"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_marginLeft="1dp"
@@ -115,13 +115,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                         <ImageView
-                            android:id="@+id/fotoCalon3"
+                            android:id="@+id/imageFotoCalon3"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:src="@drawable/emma"
                             android:scaleType="centerCrop"/>
                         <ImageView
-                            android:id="@+id/fotoWakil3"
+                            android:id="@+id/imageFotoWakil3"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_marginLeft="1dp"
@@ -156,13 +156,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                         <ImageView
-                            android:id="@+id/fotoCalon4"
+                            android:id="@+id/imageFotoCalon4"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:src="@drawable/emma"
                             android:scaleType="centerCrop"/>
                         <ImageView
-                            android:id="@+id/fotoWakil4"
+                            android:id="@+id/imageFotoWakil4"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_marginLeft="1dp"
@@ -253,12 +253,11 @@
                     android:orientation="horizontal"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="right">
+                    android:gravity="right">
                     <LinearLayout
                         android:orientation="vertical"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp">
+                        android:layout_height="wrap_content">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -304,6 +303,7 @@
                             android:text="_jumlah%"
                             android:textSize="10sp"/>
                         <TextView
+                            android:id="@+id/statusSaksi"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="_jumlah%"
@@ -360,7 +360,7 @@
                     android:textSize="8dp"
                     android:drawableLeft="@drawable/ic_action_calendar_day"
                     android:drawablePadding="-3dp"
-                    android:background="#00000000" />
+                    android:background="@android:color/transparent" />
                 <Button
                     android:id="@+id/btn_lokasi"
                     android:layout_width="60dp"
@@ -378,7 +378,7 @@
                     android:textSize="8dp"
                     android:drawableLeft="@drawable/ic_action_inbox"
                     android:drawablePadding="-10dp"
-                    android:background="#00000000"/>
+                    android:background="@android:color/transparent"/>
                 <Button
                     android:id="@+id/btn_komentar"
                     android:layout_width="80dp"
@@ -387,8 +387,21 @@
                     android:textSize="8dp"
                     android:drawableLeft="@drawable/ic_action_monolog"
                     android:drawablePadding="-10dp"
-                    android:background="#00000000"/>
+                    android:background="@android:color/transparent"/>
             </LinearLayout>
+
+            <ImageButton
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/button3"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_highlight_off_black_24dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
