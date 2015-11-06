@@ -37,6 +37,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="right">
                     <ImageView
+                        android:id="@+id/btn_share"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:background="@android:color/transparent"
