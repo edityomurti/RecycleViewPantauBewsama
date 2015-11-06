@@ -37,7 +37,7 @@
                             android:id="@+id/imageFotoCalon1"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:src="@drawable/emma"
+                            android:src="@drawable/user"
                             android:scaleType="centerCrop"/>
                         <ImageView
                             android:id="@+id/imageFotoWakil1"
@@ -51,10 +51,11 @@
                         android:id="@+id/textNamaCalon1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
                         android:text="Nama Calon"
                         android:textSize="8sp"
                         android:layout_gravity="center"
-                        />
+                        android:textColor="#766b6b" />
                     <TextView
                         android:id="@+id/textNamaWakil1"
                         android:layout_width="wrap_content"
@@ -62,7 +63,7 @@
                         android:text="Nama Wakil"
                         android:textSize="8sp"
                         android:layout_gravity="center"
-                        />
+                        android:textColor="#766b6b" />
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="vertical"
@@ -91,10 +92,11 @@
                         android:id="@+id/textNamaCalon2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
                         android:text="Nama Calon"
                         android:textSize="8sp"
                         android:layout_gravity="center"
-                        />
+                        android:textColor="#766b6b" />
                     <TextView
                         android:id="@+id/textNamaWakil2"
                         android:layout_width="wrap_content"
@@ -102,7 +104,7 @@
                         android:text="Nama Wakil"
                         android:textSize="8sp"
                         android:layout_gravity="center"
-                        />
+                        android:textColor="#766b6b" />
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="vertical"
@@ -132,10 +134,11 @@
                         android:id="@+id/textNamaCalon3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
                         android:text="Nama Calon"
                         android:textSize="8sp"
                         android:layout_gravity="center"
-                        />
+                        android:textColor="#766b6b" />
                     <TextView
                         android:id="@+id/textNamaWakil3"
                         android:layout_width="wrap_content"
@@ -143,7 +146,7 @@
                         android:text="Nama Wakil"
                         android:textSize="8sp"
                         android:layout_gravity="center"
-                        />
+                        android:textColor="#766b6b" />
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="vertical"
@@ -173,10 +176,11 @@
                         android:id="@+id/textNamaCalon4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
                         android:text="Nama Calon"
                         android:textSize="8sp"
                         android:layout_gravity="center"
-                        />
+                        android:textColor="#766b6b" />
                     <TextView
                         android:id="@+id/textNamaWakil4"
                         android:layout_width="wrap_content"
@@ -184,7 +188,7 @@
                         android:text="Nama Wakil"
                         android:textSize="8sp"
                         android:layout_gravity="center"
-                        />
+                        android:textColor="#766b6b" />
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -213,17 +217,20 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Nama jabatan    :"
-                            android:textSize="10sp"/>
+                            android:textSize="10sp"
+                            android:textColor="#766b6b" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Daerah jabatan  :"
-                            android:textSize="10sp"/>
+                            android:textSize="10sp"
+                            android:textColor="#766b6b" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Uplevel                :"
-                            android:textSize="10sp"/>
+                            android:textSize="10sp"
+                            android:textColor="#766b6b" />
                     </LinearLayout>
                     <LinearLayout
                         android:orientation="vertical"
@@ -234,82 +241,107 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text=" _jabatan"
-                            android:textSize="10sp"/>
+                            android:textSize="10sp"
+                            android:textColor="#766b6b" />
                         <TextView
                             android:id="@+id/textDaerahJabatan"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="_daerah"
-                            android:textSize="10sp"/>
+                            android:textSize="10sp"
+                            android:textColor="#766b6b" />
                         <TextView
                             android:id="@+id/textDaerahUplevel"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="_uplevel"
-                            android:textSize="10sp"/>
+                            android:textSize="10sp"
+                            android:textColor="#766b6b" />
                     </LinearLayout>
                 </LinearLayout>
-                <LinearLayout
-                    android:orientation="horizontal"
+                <FrameLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="right">
+                    android:paddingRight="10dp">
                     <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                        <TextView
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="7dp"
+                        android:padding="5dp"
+                        android:background="@drawable/border">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pengamat  :"
+                                android:textSize="9sp"
+                                android:textColor="#766b6b" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pengawas  :"
+                                android:textSize="9sp"
+                                android:textColor="#766b6b" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Saksi             :"
+                                android:textSize="9sp"
+                                android:textColor="#766b6b" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/layoutStatus"
+                            android:orientation="vertical"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="9sp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Pengamat  :"
-                            android:textSize="10sp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Pengawas  :"
-                            android:textSize="10sp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Saksi             :"
-                            android:textSize="10sp"/>
+                            android:layout_gravity="right">
+
+                            <TextView
+                                android:id="@+id/statusPengamat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="_jumlah%"
+                                android:textSize="9sp"
+                                android:textColor="#766b6b" />
+                            <TextView
+                                android:id="@+id/statusPengawas"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="_jumlah%"
+                                android:textSize="9sp"
+                                android:textColor="#766b6b" />
+                            <TextView
+                                android:id="@+id/statusSaksi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="_jumlah%"
+                                android:textSize="9sp"
+                                android:textColor="#766b6b" />
+                        </LinearLayout>
+
                     </LinearLayout>
-                    <LinearLayout
-                        android:orientation="vertical"
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="right">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="right"
-                            android:layout_marginRight="6dp"
-                            android:text="status"
-                            android:textSize="9sp"/>
-                        <TextView
-                            android:id="@+id/statusPengamat"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="_jumlah%"
-                            android:textSize="10sp"/>
-                        <TextView
-                            android:id="@+id/statusPengawas"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="_jumlah%"
-                            android:textSize="10sp"/>
-                        <TextView
-                            android:id="@+id/statusSaksi"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="_jumlah%"
-                            android:textSize="10sp"/>
-                    </LinearLayout>
-                </LinearLayout>
+                        android:layout_gravity="right"
+                        android:layout_marginRight="6dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:text="status"
+                        android:textSize="6sp"
+                        android:textColor="#766b6b"
+                        android:background="@drawable/border"
+
+                        />
+                </FrameLayout>
+
 
             </LinearLayout>
             <LinearLayout
@@ -319,7 +351,7 @@
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/layoutBawahFoto"
                 android:gravity="center_horizontal"
-                android:layout_marginTop="35dp"
+                android:layout_marginTop="45dp"
                 android:padding="8dp">
                 <Button
                     android:id="@+id/btnPengamat"
@@ -327,6 +359,7 @@
                     android:layout_height="18dp"
                     android:text="Pengamat"
                     android:textSize="6sp"
+                    android:textColor="#ffffff"
                     android:background="#da3340"/>
                 <Button
                     android:id="@+id/btnPengawas"
@@ -335,7 +368,8 @@
                     android:text="Pengawas"
                     android:textSize="6sp"
                     android:background="#da3340"
-                    android:layout_marginTop="7dp"/>
+                    android:layout_marginTop="7dp"
+                    android:textColor="#ffffff" />
                 <Button
                     android:id="@+id/btnSaksi"
                     android:layout_width="60dp"
@@ -343,61 +377,100 @@
                     android:text="saksi"
                     android:textSize="8sp"
                     android:background="#da3340"
-                    android:layout_marginTop="7dp"/>
+                    android:layout_marginTop="7dp"
+                    android:textColor="#ffffff" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/layoutBawahFoto"
-                android:weightSum="1">
-                <Button
+                android:layout_below="@id/layoutBawahFoto">
+                <LinearLayout
                     android:id="@+id/btn_tanggal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="26dp"
-                    android:paddingRight="8dp"
-                    android:text="9 Desember 2015"
-                    android:textSize="8dp"
-                    android:drawableLeft="@drawable/ic_action_calendar_day"
-                    android:drawablePadding="-3dp"
-                    android:background="@android:color/transparent" />
-                <Button
+                    android:orientation="horizontal"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="bottom"
+                    android:layout_marginLeft="5dp">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_action_calendar_day"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9 Desember 2015"
+                        android:textSize="9sp"
+                        android:layout_marginBottom="1dp"/>
+
+                </LinearLayout>
+                <LinearLayout
                     android:id="@+id/btn_lokasi"
-                    android:layout_width="60dp"
-                    android:layout_height="26dp"
-                    android:text="Lokasi"
-                    android:textSize="8dp"
-                    android:drawableLeft="@drawable/ic_action_location"
-                    android:drawablePadding="-15.4dp"
-                    android:background="#00000000"/>
-                <Button
+                    android:orientation="horizontal"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="bottom"
+                    android:layout_marginLeft="10dp">
+                    <ImageView
+                        android:layout_width="13dp"
+                        android:layout_height="19dp"
+                        android:src="@drawable/map"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lokasi"
+                        android:textSize="9sp"
+                        android:layout_marginBottom="1dp"/>
+                </LinearLayout>
+                <LinearLayout
                     android:id="@+id/btn_tps"
-                    android:layout_width="50dp"
-                    android:layout_height="26dp"
-                    android:text="tps"
-                    android:textSize="8dp"
-                    android:drawableLeft="@drawable/ic_action_inbox"
-                    android:drawablePadding="-10dp"
-                    android:background="@android:color/transparent"/>
-                <Button
-                    android:id="@+id/btn_komentar"
-                    android:layout_width="80dp"
-                    android:layout_height="26dp"
-                    android:text="komentar"
-                    android:textSize="8dp"
-                    android:drawableLeft="@drawable/ic_action_monolog"
-                    android:drawablePadding="-10dp"
-                    android:background="@android:color/transparent"/>
+                    android:orientation="horizontal"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="bottom"
+                    android:layout_marginLeft="10dp">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/tps"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TPS"
+                        android:textSize="9sp"
+                        android:layout_marginBottom="1dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/btn_comment"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="bottom"
+                    android:layout_marginLeft="10dp">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_action_monolog"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comment"
+                        android:textSize="9sp"
+                        android:layout_marginBottom="1dp"/>
+                </LinearLayout>
             </LinearLayout>
 
             <ImageButton
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
                 android:id="@+id/button3"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_highlight_off_black_24dp"
+                android:src="@drawable/close"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"/>

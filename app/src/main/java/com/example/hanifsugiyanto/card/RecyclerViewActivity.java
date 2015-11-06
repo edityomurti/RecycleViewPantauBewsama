@@ -33,39 +33,67 @@ public class RecyclerViewActivity extends Activity {
         kandidats = new ArrayList<>();
         kandidats.add(new Kandidat(
                 "Bupati", "Sleman", "(Provinsi) DIY",
-                R.drawable.lavery, R.drawable.emma, "Emma Wilson1", "Emma Wilson1",
-                R.drawable.lavery, R.drawable.emma, "Emma Wilson1", "Emma Wilson1",
-                R.drawable.lavery, R.drawable.emma, "Emma Wilson", "Emma Wilson",
-                R.drawable.lavery, R.drawable.emma, "Emma Wilson", "Emma Wilson",
+                R.drawable.user, R.drawable.user, "Emma Wilson1", "Emma Wilson1",
+                R.drawable.user, R.drawable.user, "Emma Wilson1", "Emma Wilson1",
+                R.drawable.user, R.drawable.user, "Emma Wilson", "Emma Wilson",
+                R.drawable.user, R.drawable.user, "Emma Wilson", "Emma Wilson",
                 "2000 (49%)", "300 (13% TPS)", "9 (2% TPS)"));
         kandidats.add(new Kandidat(
                 "Bupati", "Sleman", "(Provinsi) DIY",
-                R.drawable.emma, R.drawable.lavery, "Emma Wilson1", "Emma Wilson1",
-                R.drawable.emma, R.drawable.lavery, "Emma Wilson1", "Emma Wilson1",
-                R.drawable.emma, R.drawable.lavery, "Emma Wilson", "Emma Wilson",
-                R.drawable.emma, R.drawable.lavery, "Emma Wilson", "Emma Wilson",
+                R.drawable.user, R.drawable.user, "Emma Wilson1", "Emma Wilson1",
+                R.drawable.user, R.drawable.user, "Emma Wilson1", "Emma Wilson1",
+                R.drawable.user, R.drawable.user, "Emma Wilson", "Emma Wilson",
+                R.drawable.user, R.drawable.user, "Emma Wilson", "Emma Wilson",
                 "2000 (49%)", "300 (13% TPS)", "9 (2% TPS)"));
         kandidats.add(new Kandidat(
                 "Bupati", "Sleman", "(Provinsi) DIY",
-                R.drawable.emma, R.drawable.emma, "Emma Wilson1", "Emma Wilson1",
-                R.drawable.emma, R.drawable.emma, "Emma Wilson1", "Emma Wilson1",
-                R.drawable.emma, R.drawable.emma, "Emma Wilson", "Emma Wilson",
-                R.drawable.emma, R.drawable.emma, "Emma Wilson", "Emma Wilson",
+                R.drawable.user, R.drawable.user, "Emma Wilson1", "Emma Wilson1",
+                R.drawable.user, R.drawable.user, "Emma Wilson1", "Emma Wilson1",
+                R.drawable.user, R.drawable.user, "Emma Wilson", "Emma Wilson",
+                R.drawable.user, R.drawable.user, "Emma Wilson", "Emma Wilson",
                 "2000 (49%)", "300 (13% TPS)", "9 (2% TPS)"));
         kandidats.add(new Kandidat(
                 "Bupati", "Sleman", "(Provinsi) DIY",
-                R.drawable.lavery, R.drawable.lavery, "Emma Wilson1", "Emma Wilson1",
-                R.drawable.lavery, R.drawable.lavery, "Emma Wilson1", "Emma Wilson1",
-                R.drawable.lavery, R.drawable.lavery, "Emma Wilson", "Emma Wilson",
-                R.drawable.lavery, R.drawable.lavery, "Emma Wilson", "Emma Wilson",
+                R.drawable.user, R.drawable.user, "Emma Wilson1", "Emma Wilson1",
+                R.drawable.user, R.drawable.user, "Emma Wilson1", "Emma Wilson1",
+                R.drawable.user, R.drawable.user, "Emma Wilson", "Emma Wilson",
+                R.drawable.user, R.drawable.user, "Emma Wilson", "Emma Wilson",
                 "2000 (49%)", "300 (13% TPS)", "9 (2% TPS)"));
         kandidats.add(new Kandidat(
-                "Bupatis", "Slemans", "(Provinssi) DIY",
-                R.drawable.lavery, R.drawable.lavery, "Emmas Wilson1", "Emma Wilson1",
-                R.drawable.lavery, R.drawable.lavery, "Emmas Wilson1", "Emma Wilson1",
-                R.drawable.lavery, R.drawable.lavery, "Emmas Wilson", "Emma Wilson",
-                R.drawable.lavery, R.drawable.lavery, "Emmas Wilson", "Emma Wilson",
-                "2000s (49%)", "300 (13% TPS)", "9 (2% TPS)"));
+                "Bupati", "Sleman", "(Provinsi) DIY",
+                R.drawable.user, R.drawable.user, "Emma Wilson1", "Emma Wilson1",
+                R.drawable.user, R.drawable.user, "Emma Wilson1", "Emma Wilson1",
+                R.drawable.user, R.drawable.user, "Emma Wilson", "Emma Wilson",
+                R.drawable.user, R.drawable.user, "Emma Wilson", "Emma Wilson",
+                "2000 (49%)", "300 (13% TPS)", "9 (2% TPS)"));
+        kandidats.add(new Kandidat(
+                "Bupati", "Sleman", "(Provinsi) DIY",
+                R.drawable.user, R.drawable.user, "Emma Wilson1", "Emma Wilson1",
+                R.drawable.user, R.drawable.user, "Emma Wilson1", "Emma Wilson1",
+                R.drawable.user, R.drawable.user, "Emma Wilson", "Emma Wilson",
+                R.drawable.user, R.drawable.user, "Emma Wilson", "Emma Wilson",
+                "2000 (49%)", "300 (13% TPS)", "9 (2% TPS)"));
+        kandidats.add(new Kandidat(
+                "Bupati", "Sleman", "(Provinsi) DIY",
+                R.drawable.user, R.drawable.user, "Emma Wilson1", "Emma Wilson1",
+                R.drawable.user, R.drawable.user, "Emma Wilson1", "Emma Wilson1",
+                R.drawable.user, R.drawable.user, "Emma Wilson", "Emma Wilson",
+                R.drawable.user, R.drawable.user, "Emma Wilson", "Emma Wilson",
+                "2000 (49%)", "300 (13% TPS)", "9 (2% TPS)"));
+        kandidats.add(new Kandidat(
+                "Bupati", "Sleman", "(Provinsi) DIY",
+                R.drawable.user, R.drawable.user, "Emma Wilson1", "Emma Wilson1",
+                R.drawable.user, R.drawable.user, "Emma Wilson1", "Emma Wilson1",
+                R.drawable.user, R.drawable.user, "Emma Wilson", "Emma Wilson",
+                R.drawable.user, R.drawable.user, "Emma Wilson", "Emma Wilson",
+                "2000 (49%)", "300 (13% TPS)", "9 (2% TPS)"));
+        kandidats.add(new Kandidat(
+                "Bupati", "Sleman", "(Provinsi) DIY",
+                R.drawable.user, R.drawable.user, "Emma Wilson1", "Emma Wilson1",
+                R.drawable.user, R.drawable.user, "Emma Wilson1", "Emma Wilson1",
+                R.drawable.user, R.drawable.user, "Emma Wilson", "Emma Wilson",
+                R.drawable.user, R.drawable.user, "Emma Wilson", "Emma Wilson",
+                "2000 (49%)", "300 (13% TPS)", "9 (2% TPS)"));
     }
 
     private void initializeAdapter(){
