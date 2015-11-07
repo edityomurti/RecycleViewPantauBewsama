@@ -15,11 +15,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RecyclerViewActivity" >
+        <activity android:name=".TambahPeranPengamatActivity" >
         </activity>
-        <activity android:name=".Masuk" >
+        <activity android:name=".MasukActivity" >
         </activity>
-        <activity android:name=".Daftar" >
+        <activity android:name=".DaftarActivity" >
         </activity>
     </application>
 

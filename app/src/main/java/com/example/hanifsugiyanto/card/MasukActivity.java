@@ -6,14 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Daftar extends AppCompatActivity implements View.OnClickListener{
+public class MasukActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button btn_daftar, btn_masuk;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_daftar);
+        setContentView(R.layout.activity_masuk);
 
         btn_daftar = (Button) findViewById(R.id.btn_daftar);
         btn_masuk = (Button) findViewById(R.id.btn_masuk);
@@ -26,10 +26,10 @@ public class Daftar extends AppCompatActivity implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btn_daftar:
-                startActivity(new Intent(this, RecyclerViewActivity.class));
+                startActivity(new Intent(this, DaftarActivity.class));
                 break;
             case R.id.btn_masuk:
-                startActivity(new Intent(this, Masuk.class));
+                startActivity(new Intent(this, TambahPeranPengamatActivity.class));
                 break;
         }
     }

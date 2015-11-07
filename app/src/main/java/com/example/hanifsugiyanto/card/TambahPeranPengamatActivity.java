@@ -10,16 +10,15 @@ import android.widget.ArrayAdapter;
 import android.widget.SearchView;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecyclerViewActivity extends Activity {
+public class TambahPeranPengamatActivity extends Activity {
 
     private List<Kandidat> kandidats;
     private RecyclerView rv;
-    private SearchView sv;
+    //private SearchView sv;
 
     //untuk spinner
     Spinner spinner1, spinner2, spinner3, spinner4, spinner5;
@@ -29,7 +28,7 @@ public class RecyclerViewActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.search_pengamat);
+        setContentView(R.layout.tambah_peran_pengamat);
 
         /*sv = (SearchView) findViewById(R.id.search_view);
 
@@ -147,6 +146,7 @@ public class RecyclerViewActivity extends Activity {
 
         });
 
+        //inisialisasi RecyclerView
         rv=(RecyclerView)findViewById(R.id.rv);
 
         LinearLayoutManager llm = new LinearLayoutManager(this);
@@ -225,7 +225,7 @@ public class RecyclerViewActivity extends Activity {
     }
 
     private void initializeAdapter(){
-        RVAdapter adapter = new RVAdapter(kandidats);
+        ContestCardAdapter adapter = new ContestCardAdapter(kandidats);
         rv.setAdapter(adapter);
     }
 }

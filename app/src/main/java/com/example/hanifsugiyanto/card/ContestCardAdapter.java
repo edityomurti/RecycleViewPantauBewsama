@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class RVAdapter extends RecyclerView.Adapter<RVAdapter.KandidatViewHolder> {
+public class ContestCardAdapter extends RecyclerView.Adapter<ContestCardAdapter.KandidatViewHolder> {
 
     public static class KandidatViewHolder extends RecyclerView.ViewHolder {
 
@@ -87,7 +87,7 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.KandidatViewHolder
 
     List<Kandidat> kandidats;
 
-    RVAdapter(List<Kandidat> kandidats){
+    ContestCardAdapter(List<Kandidat> kandidats){
         this.kandidats = kandidats;
     }
 
