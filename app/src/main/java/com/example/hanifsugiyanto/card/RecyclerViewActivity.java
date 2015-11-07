@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.SearchView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,6 +19,7 @@ public class RecyclerViewActivity extends Activity {
 
     private List<Kandidat> kandidats;
     private RecyclerView rv;
+    private SearchView sv;
 
     //untuk spinner
     Spinner spinner1, spinner2, spinner3, spinner4, spinner5;
@@ -27,7 +29,22 @@ public class RecyclerViewActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.recycle_card);
+        setContentView(R.layout.search_pengamat);
+
+        /*sv = (SearchView) findViewById(R.id.search_view);
+
+        sv.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String text1) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String text1) {
+                return false;
+            }
+        });
+        */
 
         //inisialisasi spinner
         spinner1 = (Spinner) findViewById(R.id.spinner1);
@@ -37,7 +54,7 @@ public class RecyclerViewActivity extends Activity {
         spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemAtPosition(position) + "selected", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getBaseContext(), parent.getItemAtPosition(position) + "selected", Toast.LENGTH_LONG).show();
                 //((TextView) parent.getChildAt(0)).setTextColor(Color.BLUE);
                 ((TextView) parent.getChildAt(0)).setTextSize(13);
             }
@@ -55,7 +72,7 @@ public class RecyclerViewActivity extends Activity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-                Toast.makeText(getBaseContext(),parent.getItemAtPosition(position)+"selected", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getBaseContext(),parent.getItemAtPosition(position)+"selected", Toast.LENGTH_LONG).show();
                 ((TextView) parent.getChildAt(0)).setTextSize(13);
             }
 
@@ -76,7 +93,7 @@ public class RecyclerViewActivity extends Activity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-                Toast.makeText(getBaseContext(),parent.getItemAtPosition(position)+"selected", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getBaseContext(),parent.getItemAtPosition(position)+"selected", Toast.LENGTH_LONG).show();
                 ((TextView) parent.getChildAt(0)).setTextSize(13);
             }
 
@@ -97,7 +114,7 @@ public class RecyclerViewActivity extends Activity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-                Toast.makeText(getBaseContext(),parent.getItemAtPosition(position)+"selected", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getBaseContext(),parent.getItemAtPosition(position)+"selected", Toast.LENGTH_LONG).show();
                 ((TextView) parent.getChildAt(0)).setTextSize(13);
             }
 
@@ -117,7 +134,7 @@ public class RecyclerViewActivity extends Activity {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(),parent.getItemAtPosition(position)+"selected", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getBaseContext(),parent.getItemAtPosition(position)+"selected", Toast.LENGTH_LONG).show();
                 ((TextView) parent.getChildAt(0)).setTextSize(13);
             }
 
