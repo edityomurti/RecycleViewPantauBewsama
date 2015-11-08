@@ -147,7 +147,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:padding="5dp"
-        android:gravity="right | center_vertical"
+        android:gravity="right|center_vertical"
         android:background="#da3340">
         <ImageView
             android:layout_width="20dp"
