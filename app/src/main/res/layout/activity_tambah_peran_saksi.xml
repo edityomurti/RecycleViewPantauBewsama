@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    tools:context="com.example.hanifsugiyanto.card.TambahPeranPengawasActivity">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp">
-
+        android:padding="16dp">
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"
@@ -141,14 +141,43 @@
             android:layout_height="3dp"
             android:background="@drawable/border_black">
         </LinearLayout>
-
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="right | center_vertical"
+        android:background="#da3340">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/tps"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TPS : "
+            android:textColor="@android:color/white"
+            android:textSize="10sp">
+        </TextView>
+        <TextView
+            android:id="@+id/textJmlTps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.234"
+            android:textColor="@android:color/white"
+            android:textSize="10sp">
+        </TextView>
     </LinearLayout>
     <android.support.v7.widget.RecyclerView
         android:layout_height="match_parent"
         android:layout_width="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
         android:id="@+id/rv"
         >
-
     </android.support.v7.widget.RecyclerView>
 
 

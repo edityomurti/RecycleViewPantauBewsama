@@ -7,7 +7,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.SearchView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -28,7 +27,7 @@ public class TambahPeranPengamatActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.tambah_peran_pengamat);
+        setContentView(R.layout.activity_tambah_peran_pengamat);
 
         /*sv = (SearchView) findViewById(R.id.search_view);
 

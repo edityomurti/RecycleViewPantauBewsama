@@ -34,7 +34,7 @@
         android:id="@+id/btn_masuk"
         android:layout_width="160dp"
         android:layout_height="50dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="2dp"
         android:text="Masuk"
         android:textSize="18sp"
         android:background="@drawable/border_red" />

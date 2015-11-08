@@ -21,6 +21,12 @@
         </activity>
         <activity android:name=".DaftarActivity" >
         </activity>
+        <activity android:name=".TambahPeranPengawasActivity" >
+        </activity>
+        <activity android:name=".TambahPeranSaksiActivity" >
+        </activity>
+        <activity android:name=".AmbilPeranActivity" >
+        </activity>
     </application>
 
 </manifest>
