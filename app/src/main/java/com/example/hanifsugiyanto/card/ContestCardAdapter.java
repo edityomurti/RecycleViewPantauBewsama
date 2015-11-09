@@ -17,7 +17,6 @@ import java.util.List;
 public class ContestCardAdapter extends RecyclerView.Adapter<ContestCardAdapter.KandidatViewHolder> {
 
     public static class KandidatViewHolder extends RecyclerView.ViewHolder {
-
         CardView cv;
         /*
         TextView personName;

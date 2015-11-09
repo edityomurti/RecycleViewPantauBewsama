@@ -146,7 +146,7 @@ public class TambahPeranPengamatActivity extends Activity {
         });
 
         //inisialisasi RecyclerView
-        rv=(RecyclerView)findViewById(R.id.rv);
+        rv=(RecyclerView)findViewById(R.id.rvTambahPengamat);
 
         LinearLayoutManager llm = new LinearLayoutManager(this);
         rv.setLayoutManager(llm);

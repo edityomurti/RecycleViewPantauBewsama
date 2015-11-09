@@ -29,7 +29,7 @@ public class MasukActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(new Intent(this, DaftarActivity.class));
                 break;
             case R.id.btn_masuk:
-                startActivity(new Intent(this, TambahPeranPengamatActivity.class));
+                startActivity(new Intent(this, PengamatActivity.class));
                 break;
         }
     }

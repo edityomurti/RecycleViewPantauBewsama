@@ -10,8 +10,7 @@
         android:layout_height="wrap_content"
         android:background="#cccc"
         android:padding="16dp"
-        android:id="@+id/card_info"
-        >
+        android:id="@+id/card_info">
         <FrameLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content">
@@ -30,7 +29,8 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:text="Tambahkan pemeilihan yang ingin anda amati."
-                    android:textColor="#ffffff"/>
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"/>
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="fill_parent"
@@ -57,6 +57,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Info card"
+                android:textSize="10sp"
                 android:textColor="#ea4653"
                 android:background="@drawable/border_red"
                 android:layout_marginLeft="10dp"

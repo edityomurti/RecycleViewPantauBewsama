@@ -110,7 +110,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:padding="16dp"
-                android:id="@+id/card_contest"
                 android:background="#f7f5f5">
                 <RelativeLayout
                     android:layout_width="match_parent"

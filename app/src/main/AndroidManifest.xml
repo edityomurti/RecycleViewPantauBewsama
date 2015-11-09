@@ -27,6 +27,8 @@
         </activity>
         <activity android:name=".AmbilPeranActivity" >
         </activity>
+        <activity android:name=".PengamatActivity" >
+        </activity>
     </application>
 
 </manifest>
