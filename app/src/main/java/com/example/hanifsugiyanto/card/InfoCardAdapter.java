@@ -45,9 +45,10 @@ public class InfoCardAdapter extends RecyclerView.Adapter<InfoCardAdapter.InfoVi
     }
 
     @Override
-    public void onBindViewHolder(InfoViewHolder kandidatViewHolder, int i) {
-        kandidatViewHolder.isiInfo.setText(infos.get(i).textInfo);
+    public void onBindViewHolder(InfoViewHolder holder, int position) {
+
     }
+
 
     @Override
     public int getItemCount() {

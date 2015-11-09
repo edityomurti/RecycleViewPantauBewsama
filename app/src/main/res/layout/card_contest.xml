@@ -482,7 +482,7 @@
                 <ImageButton
                     android:layout_width="15dp"
                     android:layout_height="15dp"
-                    android:id="@+id/button3"
+                    android:id="@+id/buttonCloseCard"
                     android:background="@android:color/transparent"
                     android:scaleType="fitCenter"
                     android:src="@drawable/close"

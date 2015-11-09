@@ -4,19 +4,39 @@ package com.example.hanifsugiyanto.card;
  * Created by hanifsugiyanto on 04/11/15.
  */
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
 public class ContestCardAdapter extends RecyclerView.Adapter<ContestCardAdapter.KandidatViewHolder> {
 
-    public static class KandidatViewHolder extends RecyclerView.ViewHolder {
+    Context context;
+
+    List<Kandidat> kandidats;
+
+    ContestCardAdapter(Context context, List<Kandidat> kandidats) {
+        this.context = context;
+        this.kandidats = kandidats;
+    }
+
+    public void delete(int position){
+        kandidats.remove(position);
+        notifyItemRemoved(position);
+    }
+
+
+    public class KandidatViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         CardView cv;
         /*
         TextView personName;
@@ -46,6 +66,8 @@ public class ContestCardAdapter extends RecyclerView.Adapter<ContestCardAdapter.
         TextView  jml_pengamat;
         TextView  jml_pengawas;
         TextView  jml_saksi;
+        Button btn_pengamat;
+        ImageButton btn_close_card;
 
 
         KandidatViewHolder(View itemView) {
@@ -75,6 +97,12 @@ public class ContestCardAdapter extends RecyclerView.Adapter<ContestCardAdapter.
             jml_pengamat = (TextView) itemView.findViewById(R.id.statusPengamat);
             jml_pengawas = (TextView) itemView.findViewById(R.id.statusPengawas);
             jml_saksi    = (TextView) itemView.findViewById(R.id.statusSaksi);
+
+            btn_pengamat = (Button) itemView.findViewById(R.id.btnPengamat);
+            btn_pengamat.setOnClickListener(this);
+
+            btn_close_card = (ImageButton) itemView.findViewById(R.id.buttonCloseCard);
+            btn_close_card.setOnClickListener(this);
             /*
             personName = (TextView)itemView.findViewById(R.id.person_name);
             personAge = (TextView)itemView.findViewById(R.id.person_age);
@@ -82,12 +110,15 @@ public class ContestCardAdapter extends RecyclerView.Adapter<ContestCardAdapter.
             personPhoto2 = (ImageView)itemView.findViewById(R.id.person_photo2);
             */
         }
-    }
 
-    List<Kandidat> kandidats;
-
-    ContestCardAdapter(List<Kandidat> kandidats){
-        this.kandidats = kandidats;
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()){
+                case R.id.buttonCloseCard:
+                    delete(getAdapterPosition());
+                    break;
+            }
+        }
     }
 
     @Override

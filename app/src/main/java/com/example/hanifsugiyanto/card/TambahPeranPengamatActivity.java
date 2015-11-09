@@ -224,7 +224,7 @@ public class TambahPeranPengamatActivity extends Activity {
     }
 
     private void initializeAdapter(){
-        ContestCardAdapter adapter = new ContestCardAdapter(kandidats);
+        ContestCardAdapter adapter = new ContestCardAdapter(this, kandidats);
         rv.setAdapter(adapter);
     }
 }

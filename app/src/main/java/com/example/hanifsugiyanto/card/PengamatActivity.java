@@ -69,7 +69,7 @@ public class PengamatActivity extends Activity {
 
     private void initializeAdapter(){
         InfoCardAdapter adapterInfo = new InfoCardAdapter(infos);
-        ContestCardAdapter adapterKandidat = new ContestCardAdapter(kandidats);
+        ContestCardAdapter adapterKandidat = new ContestCardAdapter(this,kandidats);
         rv1.setAdapter(adapterInfo);
         rv2.setAdapter(adapterKandidat);
     }
